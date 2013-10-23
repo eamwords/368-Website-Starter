@@ -1,1 +1,19 @@
 /* Stylesheet */
+
+
+h1 {
+	color: green;
+}
+
+.container_12 {
+	background: #CCC;
+}
+
+.grid_4 {
+	background: #6C9;
+	margin: 35px;
+	text-align: center;
+}
+.grid_6 {
+	color: #0CF
+}
