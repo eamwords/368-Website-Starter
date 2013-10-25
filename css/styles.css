@@ -1,31 +1,71 @@
 /* Stylesheet */
 
 
-h1 {
-	color: green;
-}
-
+/*container*/
 .container_12 {
 	background: #CCC;
 }
-
-.grid_9" {
-	background-size: cover;
-	margin: 10px 10px;
-	padding: 20px 20px;
-	
-}
-
-.grid_3 {
+/*title*/
+h1 {
+	color: green;
 	text-align: center;
-	padding: 50px, 0px;
+	font-size: 37px;
 }
+	
+/*nav*/
+li {
+  display: inline;	
+  margin: 5px;
+  padding: 20px 5px;
+  text-align: left;
+}
+
+a {
+  color: green;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+/*box info*/
+h2 {
+	text-align: center;
+}
+
 
 .grid_4 {
-	background: #6C9;
-	margin: 35px;
+	padding: 0px 3px 0px 0px;
+	margin: 2px;	
 	text-align: center;
 }
-.grid_6 {
-	color: #0CF
+
+image {
+	padding: 0px 3px 0px 0px;
+	margin: 2px;	
+	text-align: center;
 }
+
+ul {
+	display: inline-block;
+}
+
+/*nav*/
+li {
+  display: inline;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+a {
+  color: green;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer {
+	background: #6C9;
+	text-align: center;
+}
+.showgrid {
+        background: url("../img/12_col.gif") !important;	
