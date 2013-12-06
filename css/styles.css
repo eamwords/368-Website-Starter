@@ -1,71 +1,323 @@
-/* Stylesheet */
 
 
-/*container*/
-.container_12 {
+/*===============
+	GLOBAL
+===============*/
+img {
+	max-width: 100%;
+}
+ 
+/*===============
+	LAYOUT
+===============*/
+
+
+.container {
 	background: #CCC;
-}
-/*title*/
-h1 {
-	color: green;
-	text-align: center;
-	font-size: 37px;
-}
+	margin: 0 auto;
+	width: 960px; /*940px*/
+ 
 	
-/*nav*/
-li {
-  display: inline;	
-  margin: 5px;
-  padding: 20px 5px;
-  text-align: left;
-}
-
-a {
-  color: green;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 
-/*box info*/
-h2 {
+.grid_10 {
+	float: left;
+	width: 10%;	
+} 
+
+.grid_20 {
+	float: left;
+	width: 20%;	
+}
+
+/*BLOCKQUOTE STEEPING, BEST*/
+
+.grid_30 {
+	margin: .5%;
+	float: left;
+	width: 30%;	
 	text-align: center;
 }
 
 
-.grid_4 {
-	padding: 0px 3px 0px 0px;
-	margin: 2px;	
-	text-align: center;
+/* IMG*/
+
+
+.grid_40 {
+	float: left;
+	width: 40%;	
 }
 
-image {
-	padding: 0px 3px 0px 0px;
-	margin: 2px;	
-	text-align: center;
+
+.grid_40 img {
+	border: solid #C93 5px;
+	margin-top: 3.723404%; /* 35px / 940 = */
+	margin-left: 1%; /*  10px / 940 = */
+    float:left;
+	width: 40%;
 }
 
-ul {
-	display: inline-block;
+/*  NAV  */
+.grid_50 {
+	float: left;
+	width: 50%;	
 }
 
-/*nav*/
-li {
-  display: inline;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
+
+.grid_60 {
+	float: left;
+	width: 60%;	
 }
 
-a {
-  color: green;
-  font-size: 14px;
-  text-decoration: none;
+
+.grid_70 {
+	float: left;
+	width: 70%;	
 }
+
+
+.grid_80 {
+	float: left;
+	width: 80%;	
+}
+
+
+.grid_90 {
+	float: left;
+	width: 90%;	
+}
+
+
+
+/*SECTION, HISTORY, FOOTER*/
+
+
+.grid_100 {
+    text-align: center;
+	margin: auto;
+	float: left;
+	width: 100%;	
+}
+
+
+
+
+.container:before,
+.container:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.container:after,
+.container:after {
+  clear: both;
+}
+
+
+
 
 footer {
 	background: #6C9;
 	text-align: center;
 }
-.showgrid {
-        background: url("../img/12_col.gif") !important;	
+
+#steeping {
+	
+}
+#best {
+
+}
+
+
+
+/*===============
+	NAV
+===============*/
+nav { /*div*/
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+ul {
+	margin: 0 ;
+}
+
+li {
+
+  float: right;
+  background: #C93;
+  display: inline;	
+  margin: 2.17%; /*10 px / 460px =*/
+  padding: 3.157% 1.05%;  /*15px 5px/ 475px */
+  text-align: left;
+  border-radius: 14px 14px 14px 14px;
+  -moz-border-radius: 14px 14px 14px 14px;
+  -webkit-border-radius: 14px 14px 14px 14px;
+  border: 0px solid #000000;
+}
+
+a {
+  color: green;
+  font-size: 1.25em; /*20px/ 16px = 1.25em*/
+  margin: 0;
+  text-decoration: none;
+}
+
+
+/*===============
+	TYPOGRAPHY
+===============*/
+h1 {
+	color: green;
+	text-align: center;
+	font-size: 2.3125em; /*37px/ 16 = 2.3125em*/
+}
+
+h2 {
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+	margin: .52%; /* 5px/ 960 =*/
+	text-align: center;
+}
+
+p {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.25em; /* 20px */
+}
+
+
+
+
+  /*===============
+	LARGE DESKTOP
+===============*/
+ /* end of Desktop */
+ 
+/*===============
+	STANDARD DESKTOP
+===============*/
+@media screen and ( max-width: 1024px ) {
+	
+	.container {
+		width: 768px;
+	}
+ul {
+	margin: 0 ;
+}
+
+li {
+
+  float: none;
+  background: #C93;
+  margin: 0.651042%; /*5 px / 768px =*/
+  padding: 1.3020% 0.260%;  /*10px 2px/ 768px */
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+a {
+  color: green;
+  font-size: 0.9375em; /*15px/ 16px = 1.25em*/
+  margin: 0;
+  text-decoration: none;
+}
+	body {
+		background: red;
+	}
+}
+ 
+ /* end of Stadnard Desktop */
+ 
+ 
+ 
+/*===============
+	TABLET
+===============*/
+@media screen and ( max-width: 768px ) {
+	
+.container {
+	width: 100%;
+	}
+	
+.grid_10,
+.grid_20,
+.grid_30,
+.grid_40,
+.grid_50,
+.grid_60,
+.grid_70,
+.grid_80,
+.grid_90,
+.grid_100 {
+	float: none;
+	width: 100%;	
+}
+ 
+ul {
+	margin: 10px ;
+}
+
+li {
+
+ 
+  background: #C93;
+  margin: 0.651042%; /*5 px / 768px =*/
+  padding: 1.3020% 0.260%;  /*10px 2px/ 768px */
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+a {
+  color: green;
+  font-size: 0.9375em; /*15px/ 16px = 1.25em*/
+  margin: 0;
+  text-decoration: none;
+} 
+ 
+ body {
+	 background: yellow;
+ }
+}
+/*===============
+	PHONE
+===============*/
+@media screen and ( max-width: 480px ) {
+.container {
+	width: 100%;
+	}
+	
+.grid_10,
+.grid_20,
+.grid_30,
+.grid_40,
+.grid_50,
+.grid_60,
+.grid_70,
+.grid_80,
+.grid_90,
+.grid_100 {
+	float: none;
+	width: 100%;	
+}
+ body {
+	 background: blue;
+ }
+}
+	
+ /* end of phone */
+ 
+ 
+  		
